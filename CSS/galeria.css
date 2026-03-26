@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.card1 {
+    width: 30vw;
+    height: 40vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.ConteGaleria {
+    padding: 30pt 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 50pt;
+
+}
+
+.card1 img {
+    padding: 10pt 0 0 0;
+    width: 250px;
+    height: 250px;
+}
+
+.card1 h3 {
+    padding: 10pt 0 0 0;
+
+}
+
+button {
+    margin: 10pt;
+}
+
+#flexcarrito{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 20pt;
+}
+
+#flexcarrito img{
+    width: 60px;
+    height: 60px;
+}
