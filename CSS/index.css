@@ -10,7 +10,7 @@
 /* HEADER */
 header{
     width: 100%;
-    height: 80px;
+    height: 110px;
     background-color: black;
     display: flex;
     align-items: center;
@@ -61,21 +61,31 @@ header a{
     line-height: 1.6;
 }
 
-/* IMAGEN */
+
 .contenedoresImg img {
     width: 350px;
 }
 
-/* FOOTER */
+
 footer {
-    background-color: black;
-    color: white;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Montserrat";
+   background: black;
+   color: white;
+   margin-top: 40px;
+   padding: 15px;
+   display: flex;
+   justify-content: space-between;
 }
+footer img {
+   margin-left: 2px;
+   width: 40px;
+   height: 40px;
+}
+
+.redes {
+    display: flex;
+    justify-content: space-around;
+} 
+
 nav a {
    background: white;
    color: black;

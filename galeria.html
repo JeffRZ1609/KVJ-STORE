@@ -6,23 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maquillaje</title>
     <link rel="icon" href="imagenes/ultaa.png" type="image/png">
-    <link rel="stylesheet" href="/KVJ-STORE/CSS/index.css">
-    <link rel="stylesheet" href="/KVJ-STORE/CSS/galeria.css">
+    <link rel="stylesheet" href="/CSS/index.css">
+    <link rel="stylesheet" href="/CSS/galeria.css">
+    <script src="/JS/carrito.js" defer></script>
 </head>
 <header>
     <div>
         <img src="imagenes/logo.png">
     </div>
     <div>
-        <h1>KVJ-STORE </h1>
+        <h1>KVJ-STORE</h1>
     </div>
     <div>
-        <div id="flexcarrito">
-            <img src="imagenes/80948074-shopping-cart-with-add-mark-sign-vector-white-icon-with-soft-shadow-on-transparent-background-removebg-preview.png" alt="">
+        <div id="flexcarrito" onclick="mostrarCarrito()">
+            <img src="/imagenes/80948074-shopping-cart-with-add-mark-sign-vector-white-icon-with-soft-shadow-on-transparent-background-removebg-preview.png"
+                alt="carrito">
         </div>
         <nav>
-        <a href="index.html">Inicio</a>
-        <a href="galeria.html">Comprar</a>
+            <a href="index.html">Inicio</a>
+            <a href="contactos.html">Contactos</a>
         </nav>
     </div>
 </header>
@@ -30,64 +32,119 @@
 <body>
     <h1>Catalogo FullFace</h1>
     <section class="ConteGaleria">
+        <!-- PRODUCTO 1 -->
         <div class="card1">
-            <img src="imagenes/rhode.png" alt="gloss">
-            <h3>rhode</h3>
-            <p>Pocket Blush Buildable Hydrating Cream Blush</p>
-            <button>compra aqui</button>
+            <img src="imagenes/rhode.png">
+            <h3>Rhode</h3>
+            <p>Pocket Blush</p>
+            <p>22000</p>
+            <input type="number" id="cant-rhode" value="1" min="1">
+            <button onclick="comprasProducto('Rhode Blush', 22000, 'cant-rhode')">
+
+                Comprar
+            </button>
         </div>
+        <!-- PRODUCTO 2 -->
         <div class="card1">
-            <img src="imagenes/s2662468-main-zoom-removebg-preview.png" alt="Blush">
+            <img src="imagenes/s2662468-main-zoom-removebg-preview.png">
             <h3>Fenty Beauty</h3>
-            <p>Gloss Bomb Universal Lip Luminizer </p>
-            <button>Compra aqui</button>
+            <p>Gloss Bomb</p>
+            <p>15000</p>
+            <input type="number" id="cant-fenty" value="1" min="1">
+            <button onclick="comprasProducto('Fenty Gloss', 15000, 'cant-fenty')">
+
+                Comprar
+            </button>
         </div>
+        <!-- PRODUCTO 3 -->
         <div class="card1">
-            <img src="imagenes/haus.png" alt="blush">
+            <img src="imagenes/haus.png">
             <h3>Haus Labs</h3>
-            <p>Triclone Skin Tech Medium Coverage Foundation </p>
-            <button>Compra aqui</button>
+            <p>Foundation</p>
+            <p>28000</p>
+            <input type="number" id="cant-haus" value="1" min="1">
+            <button onclick="comprasProducto('Haus Foundation', 28000, 'cant-haus')">
+
+                Comprar
+            </button>
         </div>
-         <div class="card1">
-            <img src="imagenes/pa.png" alt="Iluminador">
+        <!-- PRODUCTO 4 -->
+        <div class="card1">
+            <img src="imagenes/pa.png">
             <h3>Patrick TA</h3>
-            <p>Major Headlines Double-Take Crème & Powder Blush Duo</p>
-            <button>Compra aqui</button>
-        </div>
+            <p>Blush Duo</p>
+            <p>25000</p>
+            <input type="number" id="cant-patrick" value="1" min="1">
+            <button onclick="comprasProducto('Patrick TA Blush', 25000, 'cant-patrick')">
+
+                Comprar
+            </button>
         </div>
     </section>
     <section class="ConteGaleria">
+        <!-- PRODUCTO 5 -->
         <div class="card1">
-            <img src="imagenes/s2788602-main-zoom-removebg-preview.png" alt="Rimel">
+            <img src="imagenes/s2788602-main-zoom-removebg-preview.png">
             <h3>Givenchy</h3>
-            <p>Prisme Libre Illuminating & Color Correcting Loose Powder </p>
-            <button>Compra aqui</button>
+            <p>Loose Powder</p>
+            <p>32000</p>
+            <input type="number" id="cant-givenchy" value="1" min="1">
+            <button onclick="comprasProducto('Givenchy Powder', 32000, 'cant-givenchy')">
+
+                Comprar
+            </button>
         </div>
+        <!-- PRODUCTO 6 -->
         <div class="card1">
-            <img src="imagenes/refy.png" alt="Base">
+            <img src="imagenes/refy.png">
             <h3>REFY</h3>
-            <p>Glow and Sculpt Face Serum Primer with Niacinamide</p>
-            <button>Compra aqui</button>
+            <p>Primer</p>
+            <p>16000</p>
+            <input type="number" id="cant-refy" value="1" min="1">
+            <button onclick="comprasProducto('REFY Primer', 16000, 'cant-refy')">
+
+                Comprar
+            </button>
         </div>
+        <!-- PRODUCTO 7 -->
         <div class="card1">
-            <img src="imagenes/one.png" alt="Iluminador">
+            <img src="imagenes/one.png">
             <h3>One Size</h3>
-            <p>On 'Til Dawn Mattifying Waterproof Setting Spray</p>
-            <button>Compra aqui</button>
+            <p>Setting Spray</p>
+            <p>23000</p>
+            <input type="number" id="cant-one" value="1" min="1">
+            <button onclick="comprasProducto('One Size Spray', 23000, 'cant-one')">
+
+                Comprar
+            </button>
         </div>
+        <!-- PRODUCTO 8 -->
         <div class="card1">
-            <img src="imagenes/gis.png" alt="Base">
+            <img src="imagenes/gis.png">
             <h3>Gisou</h3>
-            <p>Honey Infused Hydrating Lip Oil</p>
-            <button>Compra aqui</button>
+            <p>Lip Oil</p>
+            <p>13000</p>
+            <input type="number" id="cant-gisou" value="1" min="1">
+            <button onclick="comprasProducto('Gisou Lip Oil', 13000, 'cant-gisou')">
+
+                Comprar
+            </button>
         </div>
     </section>
-
 </body>
 <footer>
-    <h3> @CopyRight KVJ</h3>
+    <div class="redes">
 
-
+        Síganos en nuestras redes
+    </div>
+    <div class="copy">Copyright KVJ</div>
+    <img src="https://store-images.s-microsoft.com/image/apps.4784.13634052595610511.c45457c9-b4af-46b0-8e61-8d7c0aec3f56.3d483847-81a6-4078-8f83-a35c5c38ee92"
+        alt="Ir a TikTok">
+    </a>
+    <a href="https://www.instagram.com/?hl=en" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1280px-Instagram_logo_2022.svg.png"
+            alt="Ir a Insta">
+    </a>
 </footer>
 
 </html>
