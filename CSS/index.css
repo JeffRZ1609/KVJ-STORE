@@ -36,11 +36,16 @@ header a{
 /* SECCIÓN PRINCIPAL */
 #ContePrincipal{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 60px;
+    justify-content: right;
+    padding: 160px;
     gap: 60px;
     background-color: white;
+    background-image: url("../imagenes/Captura de pantalla 2026-04-08 123425.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
 }
 
 /* TEXTO */
